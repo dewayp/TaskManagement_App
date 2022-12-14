@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#31D6D1D1"
     android:orientation="vertical"
     tools:context=".TaskActivity">
 
@@ -42,15 +43,18 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:background="#FF6F6F"
         android:orientation="horizontal">
 
         <Spinner
             android:id="@+id/spinnerCategory"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:layout_marginEnd="16dp"
-
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:outlineAmbientShadowColor="@color/red"
+            android:outlineSpotShadowColor="@color/red" />
 
     </LinearLayout>
 
@@ -66,22 +70,25 @@
         android:textSize="20sp" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleInpLay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:id="@+id/titleInpLay"
-        app:hintTextColor="@color/colorAccent"
-        app:boxStrokeColor="@color/colorAccent"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="16dp"
+        app:boxStrokeColor="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#FFFFFF"
             android:hint="Masukan Judul Tugas"
             android:inputType="textCapWords"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
+            android:textColorHighlight="#671111"
+            android:textColorLink="#FF0000"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -96,57 +103,61 @@
         tools:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/taskInpLay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        app:hintTextColor="@color/colorAccent"
-        app:boxStrokeColor="@color/colorAccent"
         android:layout_marginEnd="16dp"
-        android:id="@+id/taskInpLay"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="16dp"
+        app:boxStrokeColor="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#FAFAFA"
             android:gravity="start"
             android:hint="Masukan deskripsi tugas"
             android:lines="3"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
-            android:textSize="18sp" />
+            android:textColorHighlight="#671111"
+            android:textColorLink="#FF0000"
+            android:textSize="18sp"
+            app:cornerRadius="25dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        app:hintTextColor="@color/colorAccent"
-        app:boxStrokeColor="@color/colorAccent"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        app:boxStrokeColor="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/timeInptLay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        app:hintTextColor="@color/colorAccent"
-        app:boxStrokeColor="@color/colorAccent"
+        android:layout_marginBottom="16dp"
         android:visibility="gone"
-        android:id="@+id/timeInptLay"
-        android:layout_marginBottom="16dp">
+        app:boxStrokeColor="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/timeEdt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Set Time"
             android:clickable="true"
-            android:id="@+id/timeEdt"
             android:cursorVisible="false"
-            android:drawablePadding="8dp"
             android:drawableEnd="@drawable/ic_access_time_black_24dp"
+            android:drawablePadding="8dp"
             android:drawableTint="@color/colorAccent"
             android:focusable="false"
+            android:hint="Set Time"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
             android:textSize="18sp" />
@@ -154,9 +165,9 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/saveBtn"
-        android:layout_width="325dp"
+        android:layout_width="210dp"
         android:layout_height="58dp"
-        android:layout_gravity="end"
+        android:layout_gravity="center"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
