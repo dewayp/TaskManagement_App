@@ -1,9 +1,10 @@
 # Pemrograman Mobile
-## Aplikasi Task Management 
 ### Dewa Yoga Pratama
 ### D121201105
+## Aplikasi Task Management 
 
-#### - Fitur
+
+#### Fitur
 - Membuat informasi tugas
 - Menambahkan informasi level prioritas
   - Penting
@@ -12,6 +13,6 @@
   - Tidak Penting Tidak Mendesak
  - Menghapus Tugas
  
- #### - Tampilan Aplikasi
+ #### Tampilan Aplikasi
 
 ![kaskfjksjdks](https://user-images.githubusercontent.com/78086083/207627788-b794ed25-419c-408e-a69c-54b757a169f5.png)
